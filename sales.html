@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paarijat Fast Food</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1f2d3d;
+      line-height: 1.6;
+      background: #f5f9ff;
+    }
+
+    header {
+      background: url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg") center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 51, 102, 0.55);
+    }
+
+    header .hero-content {
+      position: relative;
+      color: white;
+      max-width: 800px;
+      padding: 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .hero-buttons .btn {
+      background: #fff;
+      color: #1e90ff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0.4rem;
+      display: inline-block;
+      transition: transform .2s;
+    }
+
+    .btn:hover {
+      background: #e6e6e6;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #1e4f8a;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    /* ===== MENU SECTION (FIXED) ===== */
+    .menu-grid {
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .menu-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #dce6f2;
+      text-align: center;
+      transition: transform .2s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item h3 {
+      color: #1e90ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-item p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ===== OFFER SECTION ===== */
+    .offer {
+      background: #eef5ff;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #e63946;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin: 0.4rem 0;
+    }
+
+    .btn-contact {
+      background: #1e90ff;
+      color: white;
+      padding: .7rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin: .5rem;
+    }
+
+    .btn-contact:hover {
+      background: #187bcd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e3ecf7;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero-content">
+      <h1>Paarijat Fast Food</h1>
+      <p>Biratnagar’s Favorite Fast Food | BYOB Concept – First in Town!</p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn scroll">About</a>
+        <a href="#menu" class="btn scroll">Menu</a>
+        <a href="#offer" class="btn scroll">BYOB Offer</a>
+        <a href="#contact" class="btn scroll">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+ <section id="about" class="container">
+  <h2>About Us</h2>
+  <p>
+    Fresh shawarmas, crispy wraps, and friendly service — that’s what makes
+    Paarijat Fast Food a local favorite in Biratnagar.
+  </p>
+  <p>
+    Take Away & Deliveries Available — enjoy our food at home or on the go.
+  </p>
+</section>
+
+  <!-- MENU (FIXED GRID) -->
+  <section id="menu" class="container">
+    <h2>Our Menu Specials</h2>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Chicken Shawarma</h3>
+        <p>Grilled chicken, veggies & sauces.</p>
+        <p><strong>Rs 249</strong></p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Falafel Wrap</h3>
+        <p>Crispy falafel with hummus.</p>
+        <p><strong>Rs 229</strong></p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Kurkure MoMo</h3>
+        <p>Crispy MoMos with amazing taste.</p>
+        <p><strong>Rs 299</strong></p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Fries & Dip</h3>
+        <p>Golden fries with sauces.</p>
+        <p><strong>Rs 149</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BYOB OFFER -->
+  <section id="offer" class="container">
+    <h2>BYOB (Bring Your Own Bag) Offer</h2>
+
+    <div class="offer">
+      <h3>First in Biratnagar!</h3>
+      <p>
+        Bring your own bag of chips, nachos, or snacks — we will load it up with
+        delicious meatballs or shawarma.
+      </p>
+      <p>Don’t have chips? Buy them from our corner.</p>
+      <p class="price">Loading Charge: 350 Rs</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <h2>Contact & Location</h2>
+
+    <!-- MAP (WORKING SIMPLE EMBED) -->
+    <iframe
+      src="https://www.google.com/maps?q=26.4611352,87.2767486&output=embed"
+      loading="lazy">
+    </iframe>
+
+    <p class="contact-info"><strong>Address:</strong> Sukrapath, Biratnagar-6, Nepal</p>
+    <p class="contact-info"><strong>Phone:</strong> +977 98104 05309</p>
+    <p class="contact-info">
+      <strong>TikTok:</strong>
+      <a href="https://www.tiktok.com/@paarijatfastfood" target="_blank">@paarijatfastfood</a>
+    </p>
+
+    <div style="text-align:center;">
+      <a href="tel:+9779810405309" class="btn-contact">Call Now</a>
+      <a href="https://wa.me/9779810405309" class="btn-contact">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Paarijat Fast Food — All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll('.scroll').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
